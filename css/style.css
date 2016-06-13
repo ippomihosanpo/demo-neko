@@ -1,0 +1,195 @@
+.neko{
+	position: relative;
+	width: 100%;
+}
+.neko .parts{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 500px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 500px;
+}
+.neko .parts.migiue{
+	background-image: url(../image/migiue.png);
+}
+.neko .parts.hidariue{
+	background-image: url(../image/hidariue.png);
+}
+.neko .parts.migishita{
+	background-image: url(../image/migishita.png);
+}
+.neko .parts.hidarishita{
+	background-image: url(../image/hidarishita.png);
+}
+.neko .parts.tate{
+	background-image: url(../image/tate.png);
+}
+.neko .parts.yoko{
+	background-image: url(../image/yoko.png);
+}
+.neko .parts.kao{
+	background-image: url(../image/kao.png);
+}
+
+.neko.s .parts.migiue{
+	animation: s-migiue 3s;
+	-webkit-animation: s-migiue 3s;
+	left:-100px;
+}
+@keyframes s-migiue {
+	from {transform:  translate(100px, 0px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.s .parts.hidariue{
+	animation: s-hidariue 3s;
+	-webkit-animation: s-hidariue 3s;
+	left:100px;
+}
+@keyframes s-hidariue {
+	from {transform:  translate(-100px, 0px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.s .parts.migishita{
+	animation: s-migishita 3s;
+	-webkit-animation: s-migishita 3s;
+	left:-85px;
+	top:-135px;
+}
+@keyframes s-migishita {
+	from {transform:  translate(85px,135px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.s .parts.hidarishita{
+	animation: s-hidarishita 3s;
+	-webkit-animation: s-hidarishita 3s;
+	left:120px;
+	top:-130px;
+}
+@keyframes s-hidarishita {
+	from {transform:  translate(-120px,130px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.s .parts.tate{
+	display: none;
+}
+.neko.s .parts.yoko{
+	display: none;
+}
+
+
+.neko.m .parts.migiue{
+	animation: m-migiue 3s;
+	-webkit-animation: m-migiue 3s;
+	left:-80px;
+}
+@keyframes m-migiue {
+	from {transform:  translate(80px, 0px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.m .parts.hidariue{
+	animation: m-hidariue 3s;
+	-webkit-animation: m-hidariue 3s;
+	left:70px;
+}
+@keyframes m-hidariue {
+	from {transform:  translate(-70px, 0);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.m .parts.migishita{
+	animation: m-migishita 3s;
+	-webkit-animation: m-migishita 3s;
+	left:-60px;
+	top:-110px;
+}
+@keyframes m-migishita {
+	from {transform:  translate(60px, 110px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.m .parts.hidarishita{
+	animation: m-hidarishita 3s;
+	-webkit-animation: m-hidarishita 3s;
+	left:80px;
+	top:-100px;
+}
+@keyframes m-hidarishita {
+	from {transform:  translate(-80px, 100px);}
+	to {transform:  translate(0px, 0px);}
+}
+.neko.m .parts.tate{
+	display: none;
+}
+.neko.m .parts.yoko{
+	animation: m-yoko 3s;
+	-webkit-animation: m-yoko 3s;
+	background-size: 310px;
+	left: 90px;
+	top: 35px;
+}
+@keyframes m-yoko {
+	from { transform:  scale(1.6) translate(30px, 75px); }
+	to { transform:  scale(1) translate(0px, 0px); }
+}
+
+
+.neko.l .parts.migiue{
+	animation: l-migiue 3s;
+	-webkit-animation: l-migiue 3s;
+	left:-40px;
+}
+@keyframes l-migiue {
+	from { transform:  translate(40px, 0px); }
+	to { transform:  translate(0px, 0px); }
+}
+.neko.l .parts.hidariue{
+	animation: l-hidariue 3s;
+	-webkit-animation: l-hidariue 3s;
+	left:40px;
+}
+@keyframes l-hidariue {
+	from { transform:  translate(-40px, 0px); }
+	to { transform:  translate(0px, 0px); }
+}
+.neko.l .parts.migishita{
+	animation: l-migishita 3s;
+	-webkit-animation: l-migishita 3s;
+	left:-35px;
+	top:-50px;
+}
+@keyframes l-migishita {
+	from { transform:  translate(35px, 50px); }
+	to { transform:  translate(0px, 0px); }
+}
+.neko.l .parts.hidarishita{
+	animation: l-hidarishita 3s;
+	-webkit-animation: l-hidarishita 3s;
+	left:50px;
+	top:-50px;
+}
+@keyframes l-hidarishita {
+	from { transform:  translate(-50px, 50px); }
+	to { transform:  translate(0px, 0px); }
+}
+.neko.l .parts.tate{
+	animation: l-tate 3s;
+	-webkit-animation: l-tate 3s;
+	background-size: 400px;
+	left: 55px;
+	top: 10px;
+}
+@keyframes l-tate {
+	from { transform:  scale(1.2) translate(0px, 35px); }
+	to { transform:  scale(1) translate(0px, 0px); }
+}
+.neko.l .parts.yoko{
+	animation: l-yoko 3s;
+	-webkit-animation: l-yoko 3s;
+	background-size: 400px;
+	left: 50px;
+	top: 20px;
+}
+@keyframes l-yoko {
+	from { transform:  scale(1.2) translate(10px, 30px); }
+	to { transform:  scale(1) translate(0px, 0px); }
+}

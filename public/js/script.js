@@ -2,7 +2,7 @@ $(function(){
   $('#execute').click(
     function(){
       $.ajax({
-        url: 'https://oy76615zsh.execute-api.us-east-1.amazonaws.com/ml',
+        url: 'https://e3q07zphak.execute-api.us-east-1.amazonaws.com/prod/predict',
         type: 'POST',
         dataType: 'json',
         contentType: 'application/json',
@@ -19,9 +19,9 @@ $(function(){
           "crunch_rate": $('#crunch_rate').val()
         }
       }).done(function(data) {
-          alert(data);
+        alert(data);
       }).fail(function(data) {
-        console.log(data.responseJSON);
+        console.log(data);
       });
     }
   );

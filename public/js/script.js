@@ -1,17 +1,29 @@
 $(function(){
   $('#execute').click(
     function(){
+      age = $('#age').val();
+      gender = $('#gender').val();
+      height = $('#height').val();
+      weight = $('#weight').val();
+      meal_rate = $('#meal_rate').val();
+      motion_rate = $('#motion_rate').val();
+      crunch_rate = $('#crunch_rate').val();
+      $('#error').text("");
+      if(age == '' || gender == '' || height == '' || weight == '' || meal_rate == '' || motion_rate == '' || crunch_rate == '') {
+        $('#error').text("ぜんぶにゅうりょくしてね");
+        return;
+      }
       $('#result').addClass('none');
       $('#neko').removeClass('s m l');
 
       var data = {
-        "age": $('#age').val(),
-        "gender": $('#gender').val(),
-        "height": $('#height').val(),
-        "weight": $('#weight').val(),
-        "meal_rate": $('#meal_rate').val(),
-        "motion_rate": $('#motion_rate').val(),
-        "crunch_rate": $('#crunch_rate').val()
+        "age": age,
+        "gender": gender,
+        "height": height,
+        "weight": weight,
+        "meal_rate": meal_rate,
+        "motion_rate": motion_rate,
+        "crunch_rate": crunch_rate
       }
       $.ajax({
         type: 'POST',

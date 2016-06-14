@@ -1,6 +1,9 @@
 $(function(){
   $('#execute').click(
     function(){
+      $('#result').addClass('none');
+      $('#neko').removeClass('s m l');
+
       var data = {
         "age": $('#age').val(),
         "gender": $('#gender').val(),
@@ -15,22 +18,23 @@ $(function(){
         url: 'https://6q09kuhuic.execute-api.us-east-1.amazonaws.com/prod/predict',
         data: JSON.stringify(data),
       }).done(function(data) {
-          result = data.Prediction.predictedValue.toFixed(1)
-          if(result <= -1.0) {
+          result = data.Prediction.predictedValue.toFixed(1) * 4
+          if(result <= -4.0) {
             neko_size = 's'
-          } else if(result <= -0.5) {
+          } else if(result <= -2.0) {
             neko_size = 'm'
-          } else if(result <= -0.1) {
+          } else if(result <= -1.0) {
             neko_size = 'l'
           } else {
             neko_size = ''
           }
           $('#neko').addClass('shake-little shake-constant')
-          $('#neko').removeClass('s m l').addClass(neko_size)
+          $('#neko').addClass(neko_size)
           setTimeout(function(){
             $('#neko').removeClass('shake-little shake-constant')
             setTimeout(function(){
-              $('#result').text(result * 2 + 'kg');
+              $('#result span').text(result + ' kg');
+              $('#result').removeClass('none');
             },1000);
           },6000);
       }).fail(function(data) {

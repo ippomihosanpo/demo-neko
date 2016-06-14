@@ -10,59 +10,62 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div id="input_form">
-		<ul>
-		<li>年齢：<input type="text" id="age">歳</li>
-		<li>性別：
-			<select id="gender">
-				<option value="1">男性</option>
-				<option value="2" selected>女性</option>
-			</select>
-		</li>	<li>身長：<input type="text" id="height">cm</li>
-		<li>体重：<input type="text" id="weight">kg</li>
-		<li>食事制限がんばる度：
-			<select id="meal_rate">
-				<option value="0.0">パス</option>
-				<option value="0.1">気が向いたら</option>
-				<option value="0.3">週2くらいかな</option>
-				<option value="0.6">週4くらい！</option>
-				<option value="0.8">ほぼ毎日がんばる！</option>
-				<option value="1.0">四六時中がんばる！！</option>
-			</select>
-		</li>
-		<li>かるい運動がんばる度：
-			<select id="motion_rate">
-				<option value="0.0">パス</option>
-				<option value="0.1">気が向いたら</option>
-				<option value="0.3">週2くらいかな</option>
-				<option value="0.6">週4くらい！</option>
-				<option value="0.8">ほぼ毎日がんばる！</option>
-				<option value="1.0">四六時中がんばる！！</option>
-			</select>
-		</li>
-		<li>きつい運動がんばる度：
-			<select id="crunch_rate">
-				<option value="0.0">パス</option>
-				<option value="0.3">週2くらいかな</option>
-				<option value="0.6">週4くらい！</option>
-				<option value="0.8">ほぼ毎日がんばる！</option>
-				<option value="1.0">四六時中がんばる！！</option>
-			</select>
-		</li>
-		<li>
-			<button id="execute">がんばるど！</button>
-		</li>
-		</ul>
-	</div>
-	<div id="result"></div>
-	<div id="neko">
-		<div class="parts migiue"></div>
-		<div class="parts hidariue"></div>
-		<div class="parts migishita"></div>
-		<div class="parts hidarishita"></div>
-		<div class="parts tate"></div>
-		<div class="parts yoko"></div>
-		<div class="parts kao"></div>
+	<div class="container">
+		<div id="input_form">
+			<ul>
+			<li>年齢：<input type="text" id="age">歳</li>
+			<li>性別：
+				<select id="gender">
+					<option value="1">男性</option>
+					<option value="2" selected>女性</option>
+				</select>
+			</li>	<li>身長：<input type="text" id="height">cm</li>
+			<li>体重：<input type="text" id="weight">kg</li>
+			<li>食事制限がんばる度：
+				<select id="meal_rate">
+					<option value="0.0">パス</option>
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</li>
+			<li>かるい運動がんばる度：
+				<select id="motion_rate">
+					<option value="0.0">パス</option>
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</li>
+			<li>きつい運動がんばる度：
+				<select id="crunch_rate">
+					<option value="0.0">パス</option>
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</li>
+			<li>
+				<button id="execute">がんばるど！</button>
+			</li>
+			</ul>
+		</div>
+		<div id="neko">
+			<div id="result" class="none"><span></span></div>
+			<div class="parts migiue"></div>
+			<div class="parts hidariue"></div>
+			<div class="parts migishita"></div>
+			<div class="parts hidarishita"></div>
+			<div class="parts tate"></div>
+			<div class="parts yoko"></div>
+			<div class="parts kao"></div>
+		</div>
 	</div>
 </body>
 </html>

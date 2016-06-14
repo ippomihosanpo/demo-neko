@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>1ヶ月ちゃれんじ</title>
+	<title>減量予報ねこ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
 	<meta name="apple-mobile-web-app-capable" content="no">
 	<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
@@ -11,6 +11,7 @@
 </head>
 <body>
 	<div class="container">
+		<h1>減量予報ねこ(仮)</h1>
 		<div id="input_form">
 			<ul>
 			<li>年齢：<input type="text" id="age">歳</li>
@@ -21,39 +22,39 @@
 				</select>
 			</li>	<li>身長：<input type="text" id="height">cm</li>
 			<li>体重：<input type="text" id="weight">kg</li>
-			<li>食事制限がんばる度：
+			<li>食事改善 がんばる度：
 				<select id="meal_rate">
-					<option value="0.0">パス</option>
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</li>
-			<li>かるい運動がんばる度：
+			<li>有酸素運動 がんばる度：
 				<select id="motion_rate">
-					<option value="0.0">パス</option>
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</li>
-			<li>きつい運動がんばる度：
+			<li>引き締め がんばる度：
 				<select id="crunch_rate">
-					<option value="0.0">パス</option>
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</li>
 			<li>
 				<div id="error"></div>
-				<button id="execute">がんばるど！</button>
+				<button id="execute">予報する</button>
 			</li>
 			</ul>
 		</div>

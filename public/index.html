@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>1ヶ月ちゃれんじ</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
 	<meta name="apple-mobile-web-app-capable" content="no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -9,47 +10,57 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<ul>
-	<li>年齢：<input type="text" id="age">歳</li>
-	<li>性別：
-		<select id="gender">
-			<option value="1">男性</option>
-			<option value="2" selected>女性</option>
-		</select>
-	</li>	<li>身長：<input type="text" id="height">cm</li>
-	<li>体重：<input type="text" id="weight">kg</li>
-	<li>食事制限がんばる度：
-		<select id="meal_rate">
-			<option value="0.1">気が向いたら</option>
-			<option value="0.3">週2くらいかな</option>
-			<option value="0.6">週4くらい！</option>
-			<option value="0.8">ほぼ毎日がんばる！</option>
-			<option value="1.0">四六時中がんばる！！</option>
-		</select>
-	</li>
-	<li>かるい運動がんばる度：
-		<select id="motion_rate">
-			<option value="0.1">気が向いたら</option>
-			<option value="0.3">週2くらいかな</option>
-			<option value="0.6">週4くらい！</option>
-			<option value="0.8">ほぼ毎日がんばる！</option>
-			<option value="1.0">四六時中がんばる！！</option>
-		</select>
-	</li>
-	<li>きつい運動がんばる度：
-		<select id="crunch_rate">
-			<option value="0.1">気が向いたら</option>
-			<option value="0.3">週2くらいかな</option>
-			<option value="0.6">週4くらい！</option>
-			<option value="0.8">ほぼ毎日がんばる！</option>
-			<option value="1.0">四六時中がんばる！！</option>
-		</select>
-	</li>
-	<li>
-		<button id="execute">がんばるど！</button>
-	</li>
-	</ul>
-	<div class="neko">
+	<header>
+		<p>1 Month Neko Simulator</p>
+	</header>
+	<div id="setting">
+		<div id="setting-inner">
+			<ul id="base" class="clear">
+				<li><input type="text" id="age"><span>歳</span></li>
+				<li><input type="text" id="height"><span>cm</span></li>
+				<li><input type="text" id="weight"><span>kg</span></li>
+			</ul>
+			<div class="radio-group">
+				<p>性別</p>
+				<select id="gender">
+					<option value="1">男性</option>
+					<option value="2" selected>女性</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<p>食事制限がんばる度：</p>
+				<select id="meal_rate">
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<p>かるい運動がんばる度：</p>
+				<select id="motion_rate">
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</div>
+			<div class="select-group">
+				<p>きつい運動がんばる度：</p>
+				<select id="crunch_rate">
+					<option value="0.1">気が向いたら</option>
+					<option value="0.3">週2くらいかな</option>
+					<option value="0.6">週4くらい！</option>
+					<option value="0.8">ほぼ毎日がんばる！</option>
+					<option value="1.0">四六時中がんばる！！</option>
+				</select>
+			</div>
+			<p id="execute">がんばるど！</p>
+		</div>
+	</div>
+	<div class="neko m">
 		<div class="parts hidariue"></div>
 		<div class="parts yoko"></div>
 		<div class="parts migiue"></div>

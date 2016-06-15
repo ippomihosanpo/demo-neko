@@ -29,8 +29,7 @@ $(function(){
         type: 'POST',
         url: 'https://6q09kuhuic.execute-api.us-east-1.amazonaws.com/prod/predict',
         data: JSON.stringify(data),
-      }).done(function(data) {
-          result = data.Prediction.predictedValue.toFixed(1) * 4
+      }).done(function(result) {
           if(result <= -4.0) {
             neko_size = 's'
           } else if(result <= -2.0) {

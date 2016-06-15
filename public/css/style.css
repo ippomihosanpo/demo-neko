@@ -422,6 +422,8 @@ header{
 	height: 100px;
 	text-align: center;
 	border-radius: 50px;
+	font-size: 21px;
+	font-weight: bold;
 }
 #result span{
 	display: inline-block;

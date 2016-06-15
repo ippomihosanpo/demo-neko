@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>1ヶ月ちゃれんじ</title>
+	<title>減量予報ねこ</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
 	<meta name="apple-mobile-web-app-capable" content="no">
+	<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -28,48 +29,52 @@
 				</select>
 			</div>
 			<div class="select-group">
-				<p>食事制限がんばる度：</p>
+				<p>食事改善 がんばる度：</p>
 				<select id="meal_rate">
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</div>
 			<div class="select-group">
-				<p>かるい運動がんばる度：</p>
+				<p>有酸素運動 がんばる度：</p>
 				<select id="motion_rate">
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</div>
 			<div class="select-group">
-				<p>きつい運動がんばる度：</p>
+				<p>引き締め がんばる度：</p>
 				<select id="crunch_rate">
-					<option value="0.1">気が向いたら</option>
-					<option value="0.3">週2くらいかな</option>
-					<option value="0.6">週4くらい！</option>
-					<option value="0.8">ほぼ毎日がんばる！</option>
-					<option value="1.0">四六時中がんばる！！</option>
+					<option value="0.0">やらない</option>
+					<option value="0.1">たま〜に</option>
+					<option value="0.3">週に2日くらい</option>
+					<option value="0.6">2日に1回！</option>
+					<option value="0.8">まいにち！</option>
+					<option value="1.0">毎朝！毎晩！</option>
 				</select>
 			</div>
-			<p id="execute">がんばるど！</p>
+			<p id="execute">予報する</p>
 		</div>
+		<div id="error"></div>
 	</div>
-	<div class="neko m">
-		<div class="parts hidariue"></div>
-		<div class="parts yoko"></div>
+	<div id="neko">
+		<div id="result" class="none"><span></span></div>
 		<div class="parts migiue"></div>
+		<div class="parts hidariue"></div>
+		<div class="parts migishita"></div>
 		<div class="parts hidarishita"></div>
 		<div class="parts tate"></div>
-		<div class="parts migishita"></div>
+		<div class="parts yoko"></div>
 		<div class="parts kao"></div>
 	</div>
-
 	<div id="loading">
 		<div id="loading-image">
 			<p>1</p>

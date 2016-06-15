@@ -140,6 +140,7 @@ header{
 *****************************************/
 #neko{
 	position: relative;
+	display: block;
 	width: 500px;
 	height: 500px;
 	margin: 0 auto;

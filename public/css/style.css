@@ -417,7 +417,8 @@ header{
 *****************************************/
 #result {
 	position: absolute;
-	right: 0;
+	right: 25px;
+	top: 35px;
 	background-color: pink;
 	width: 100px;
 	height: 100px;

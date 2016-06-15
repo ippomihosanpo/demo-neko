@@ -19,7 +19,7 @@ function countDate(){
         clearInterval(interval);
       }
     }
-  }, 50);
+  }, 160);
 }
 function endLoading(){
   COUNT = 31
@@ -29,7 +29,7 @@ function endLoading(){
       COUNT = 1
       $('#loading-image').find("p").html(COUNT);
     });
-  },300);
+  },1000);
 }
 
 $(function(){
